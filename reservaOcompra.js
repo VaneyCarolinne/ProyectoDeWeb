@@ -56,7 +56,7 @@ app.post('/reservar.html', function (req, res) {
     console.log(origen, destino, agencia, numero, fecha, cedula, numeroPasaje, isCompra, isReserva);
 	
 	var sql = "INSERT INTO compra_reserva (origen, destino, agencia, NroTarjeta, fecha, idcliente, numero_pasaje, isCompra, isReserva)"+
-  "VALUES('" +origen+"', '" +destino+"', '" +agencia+"', '" +numero+"', '" +fecha+"', '" +cedula+"' '" +numeroPasaje+"', '" +isCompra+"','" +isReserva+"')";
+  "VALUES('" +origen+"', '" +destino+"', '" +agencia+"', '" +numero+"', '" +fecha+"', '" +cedula+"', '" +numeroPasaje+"', '" +isCompra+"','" +isReserva+"')";
     
 	
 	con.query(sql, function (err, result) {
